@@ -1,4 +1,6 @@
-﻿namespace AeroBase
+﻿using System;
+
+namespace AeroBase
 {
     partial class MainForm
     {
@@ -35,6 +37,15 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvDrones = new System.Windows.Forms.DataGridView();
             this.btnAddDrone = new System.Windows.Forms.Button();
+            this.btnEditDrone = new System.Windows.Forms.Button();
+            this.btnEditDrone.Location = new System.Drawing.Point(540, 148);
+            this.btnEditDrone.Name = "btnEditDrone";
+            this.btnEditDrone.Size = new System.Drawing.Size(130, 27);
+            this.btnEditDrone.TabIndex = 11;
+            this.btnEditDrone.Text = "Изменить";
+            this.btnEditDrone.UseVisualStyleBackColor = true;
+            this.btnEditDrone.Click += new System.EventHandler(this.btnEditDrone_Click);
+            this.panelMain.Controls.Add(this.btnEditDrone);
             this.btnDeleteDrone = new System.Windows.Forms.Button();
             this.panelSidebar.SuspendLayout();
             this.panelMain.SuspendLayout();
@@ -272,5 +283,6 @@
         private System.Windows.Forms.Button btnAddDrone;
         private System.Windows.Forms.Button btnDeleteDrone;
         private System.Windows.Forms.DataGridView dgvDrones;
+        private System.Windows.Forms.Button btnEditDrone;
     }
 }
