@@ -43,7 +43,6 @@ namespace AeroBase
                 MessageBox.Show("Ошибка загрузки: " + ex.Message);
             }
         }
-        // --- ОБРАБОТЧИК ДОБАВЛЕНИЯ ---
         private void btnAddDrone_Click(object sender, EventArgs e)
         {
             using (DroneEditForm editForm = new DroneEditForm())
@@ -63,7 +62,6 @@ namespace AeroBase
             }
         }
 
-        // --- ОБРАБОТЧИК РЕДАКТИРОВАНИЯ ---
         private void btnEditDrone_Click(object sender, EventArgs e)
         {
             Drone selected = dgvDrones.CurrentRow?.DataBoundItem as Drone;
@@ -91,7 +89,6 @@ namespace AeroBase
             }
         }
 
-        // --- ОБРАБОТЧИК УДАЛЕНИЯ ---
         private void btnDeleteDrone_Click(object sender, EventArgs e)
         {
             Drone selected = dgvDrones.CurrentRow?.DataBoundItem as Drone;
@@ -116,7 +113,6 @@ namespace AeroBase
             }
         }
 
-        // --- ОБРАБОТЧИК ПОИСКА (если есть txtSearch) ---
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string query = txtSearch.Text.Trim().ToLower();
