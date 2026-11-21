@@ -29,25 +29,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
 
-            // txtDroneName
             this.txtDroneName.Location = new System.Drawing.Point(150, 20);
             this.txtDroneName.Name = "txtDroneName";
             this.txtDroneName.Size = new System.Drawing.Size(200, 23);
             this.txtDroneName.TabIndex = 0;
 
-            // txtModel
             this.txtModel.Location = new System.Drawing.Point(150, 60);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(200, 23);
             this.txtModel.TabIndex = 1;
 
-            // txtInventoryNumber
             this.txtInventoryNumber.Location = new System.Drawing.Point(150, 100);
             this.txtInventoryNumber.Name = "txtInventoryNumber";
             this.txtInventoryNumber.Size = new System.Drawing.Size(200, 23);
             this.txtInventoryNumber.TabIndex = 2;
 
-            // cmbDroneType
             this.cmbDroneType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDroneType.FormattingEnabled = true;
             this.cmbDroneType.Location = new System.Drawing.Point(150, 140);
@@ -55,7 +51,6 @@
             this.cmbDroneType.Size = new System.Drawing.Size(200, 23);
             this.cmbDroneType.TabIndex = 3;
 
-            // cmbDroneStatus
             this.cmbDroneStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDroneStatus.FormattingEnabled = true;
             this.cmbDroneStatus.Location = new System.Drawing.Point(150, 180);
@@ -63,7 +58,6 @@
             this.cmbDroneStatus.Size = new System.Drawing.Size(200, 23);
             this.cmbDroneStatus.TabIndex = 4;
 
-            // btnSave
             this.btnSave.Location = new System.Drawing.Point(150, 230);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(95, 30);
@@ -72,7 +66,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 
-            // btnCancel
             this.btnCancel.Location = new System.Drawing.Point(255, 230);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(95, 30);
@@ -81,18 +74,12 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 
-            // label1
             this.label1.AutoSize = true; this.label1.Location = new System.Drawing.Point(20, 23); this.label1.Text = "Название:";
-            // label2
             this.label2.AutoSize = true; this.label2.Location = new System.Drawing.Point(20, 63); this.label2.Text = "Модель:";
-            // label3
             this.label3.AutoSize = true; this.label3.Location = new System.Drawing.Point(20, 103); this.label3.Text = "Инв. номер:";
-            // label4
             this.label4.AutoSize = true; this.label4.Location = new System.Drawing.Point(20, 143); this.label4.Text = "Тип:";
-            // label5
             this.label5.AutoSize = true; this.label5.Location = new System.Drawing.Point(20, 183); this.label5.Text = "Состояние:";
 
-            // DroneEditForm
             this.ClientSize = new System.Drawing.Size(380, 280);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
